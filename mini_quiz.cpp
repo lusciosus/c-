@@ -1,25 +1,62 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
-{
-	//double base;
-	//double height;
+    int main() {
+       //int num;
+       // int thousands, hundreds, tens, ones;
 
-	//base = 4;
-	//height = 2;
+       //printf("0부터 99999 사이의 정수를 입력하세요: ");
+       //scanf_s("%d", &num);
 
-	//printf("정삼각형의 넓이는 %.1lf * %.1lf * 0.5=%.1lf", base, height, base * height * 0.5);
+        //thousands = (num / 1000) % 10; 
+        //hundreds = (num / 100) % 10;   
+        //tens = (num / 10) % 10;        
+        //ones = num % 10;               
 
-	int side;
-	side = 2;
-	printf("정사각형의 넓이는 %d*%d=%d\n", side, side, side * side);
+        //printf("만의 자리: %d\n", num / 10000);
+        //printf("천의 자리: %d\n", thousands);
+        //printf("백의 자리: %d\n", hundreds);
+        //printf("십의 자리: %d\n", tens);
+        //printf("일의 자리: %d\n", ones);
 
-	double radius;
-	radius = 2.7;
-	double pi;
-	pi = 3.141592;
-	printf("원의 둘레는 2*%.2lf*%.2lf=%.2lf\n", radius, pi, 2 * radius * pi);
-	printf("원의 넓이는 %.2lf*%.2lf*%.2lf=%.2lf", pi, radius,radius, pi * radius * radius);
-	
-	return 0;
-}
+        //int totalSeconds;
+        //int hours, minutes, seconds;
+
+       
+       // printf("초 단위로 시간을 입력하세요: ");
+        //scanf_s("%d", &totalSeconds);
+
+       
+       //hours = totalSeconds / 3600;
+       //minutes = (totalSeconds % 3600) / 60;
+       //seconds = totalSeconds % 60;
+
+        
+       //printf("%d시간 %d분 %d초\n", hours, minutes, seconds);
+
+       //int num;
+       //int hundreds;
+       
+       //printf("10000부터 99999 사이의 정수를 입력하세요: ");
+       //scanf_s("%d", &num);
+
+       //hundreds = (num / 100) % 10;
+        
+       //printf("100의 자리: %d\n", hundreds);
+
+        int num;
+        int rounded;
+
+        printf("10000부터 99999 사이의 정수를 입력하세요: ");
+        scanf_s("%d", &num);
+
+        rounded = ((num + 50) / 100) * 100;
+        
+        printf("반올림된 값: %d\n", rounded);
+
+
+
+
+
+
+        return 0;
+    }
