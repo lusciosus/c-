@@ -1,55 +1,121 @@
 #include <stdio.h>
 
-int main()
-{
-	double a, b, c;
-	printf("원금을 입력하시오: ");
-	scanf_s("%lf", &a);
-	printf("이자율을 입력하시오: ");
-    scanf_s("%lf", &b);
-	printf("기간을 입력하시오: ");
-	scanf_s("%lf", &c);
-	printf("이자는: %.lf\n", a * b * c);
+//int main() {
+//    int num1, num2;
+//
+//    printf("첫 번째 양의 정수를 입력하세요: ");
+//    scanf_s("%d", &num1);
+//    printf("두 번째 양의 정수를 입력하세요: ");
+//    scanf_s("%d", &num2);
+//
+//    if (num1 * num1 == num2) {
+//        printf("%d * %d = %d\n", num1, num1, num2);
+//    }
+//    else if (num2 * num2 == num1) {
+//        printf("%d * %d = %d\n", num2, num2, num1);
+//    }
+//    else {
+//        printf("none\n");
+//    }
+//
+//    return 0;
+//}
+
+//int main()
+//{
+//    int num1, num2, num3, num4, num5;
+//    int sum = 0;
+//
+//    printf("5개의 정수를 입력하세요:\n");
+//    scanf_s("%d %d %d %d %d", &num1, &num2, &num3, &num4, &num5);
+//
+//    if (num1 > 0) {
+//        sum += num1;
+//    }
+//    if (num2 > 0) {
+//        sum += num2;
+//    }
+//    if (num3 > 0) {
+//        sum += num3;
+//    }
+//    if (num4 > 0) {
+//        sum += num4;
+//    }
+//    if (num5 > 0) {
+//        sum += num5;
+//    }
+//
+//    printf("양수들의 합은 %d 입니다.\n", sum);
+//
+//	return 0;
+//}
+
+//int main() {
+//    int n;
+//
+//    printf("정수를 입력하세요: ");
+//    scanf_s("%d", &n);
+//    
+//    if (n >= 20 && n <= 30) {
+//        printf("1\n");
+//    }
+//    else {
+//        printf("0\n");
+//    }
+//
+//    return 0;
+//}
+
+//int main() {
+//    int n;
+//
+//    printf("양의 정수를 입력하세요: ");
+//    scanf_s("%d", &n);
+//
+//    if (n % 2 == 0) {
+//        printf("0\n");
+//    }
+//    else {
+//        printf("1\n");
+//    }
+//
+//    return 0;
+//}
 
 
-	double JPN, exchange;
-	printf("원금액을 입력하시오:");
-	scanf_s("%lf", &JPN);
-	printf("환율을 나타내시오:");
-	scanf_s("%lf", &exchange );
-	printf("원화로 나타내시오:%.2lf\n", JPN * exchange);
-
-	double USD, rate ;
-	printf("원금액을 입력하시오:");
-	scanf_s("%lf", &USD);
-	printf("환율을 나타내시오:");
-	scanf_s("%lf", &rate );
-	printf("원화로 나타내시오:%.2lf\n", USD * rate);
-
-
-	int width, length;
-	printf("가로를 입력하시오:");
-	scanf_s("%d", &width);
-	printf("세로를 나타내시오:");
-	scanf_s("%d", &length);
-	printf("면적을 나타내시오: %d\n", width * length);
-
-	double km, hr;
-	printf("거리를 입력하시오:");
-	scanf_s("%lf", &km);
-	printf("시간을 입력하시오:");
-	scanf_s("%lf", &hr);
-	printf("평균 속도는: %.2lf\n", km / hr);
-
-	double radius, h;
-	printf("반지름을 입력하시오:");
-	scanf_s("%lf", &radius);
-	printf("높이를 입력하시오:");
-	scanf_s("%lf", &h);
-	printf("원기둥의 부피는: %.2lf", 3.14 * radius * radius * h);
+//int main() {
+//    int n, m;
+//
+//    printf("두 개의 정수를 입력하세요: ");
+//    scanf_s("%d %d", &n, &m);
+//
+//    if (n > m) {
+//        printf("%d\n", n);
+//    }
+//    else {
+//        printf("%d\n", m);
+//    }
+//
+//    return 0;
+//}
 
 
+int main() {
+    int a, b;
 
+    printf("두 개의 서로 다른 양의 정수를 입력하세요: ");
+    scanf_s("%d %d", &a, &b);
 
-	return 0;
+    if (a > b) {
+        int 몫 = a / b;
+        int 나머지 = a % b;
+        printf("나눈 몫: %d, 나머지: %d\n", 몫, 나머지);
+    }
+    else {
+        int 몫 = b / a;
+        int 나머지 = b % a;
+        printf("나눈 몫: %d, 나머지: %d\n", 몫, 나머지);
+    }
+
+    return 0;
 }
