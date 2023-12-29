@@ -1,121 +1,75 @@
-#include <stdio.h>
+#include<stdio.h>
+
+//1.1부터 100까지의 숫자 중 짝수만을 출력하는 c프로그램 
 
 //int main() {
-//    int num1, num2;
-//
-//    printf("첫 번째 양의 정수를 입력하세요: ");
-//    scanf_s("%d", &num1);
-//    printf("두 번째 양의 정수를 입력하세요: ");
-//    scanf_s("%d", &num2);
-//
-//    if (num1 * num1 == num2) {
-//        printf("%d * %d = %d\n", num1, num1, num2);
+//    int i;
+//    for (i = 1; i <= 100; i++) {
+//        if (i % 2 == 0) {
+//            printf("%d\n", i);
+//        }
 //    }
-//    else if (num2 * num2 == num1) {
-//        printf("%d * %d = %d\n", num2, num2, num1);
+//    return 0;
+//}
+
+//2. 10부터 1까지의 숫자를 역순으로 출력하는 c프로그램
+
+//int main() {
+//    int i;
+//    for (i = 10; i > 0; i--) {
+//        printf("%d\n", i);
 //    }
-//    else {
-//        printf("none\n");
+//    return 0;
+//}
+
+//3. 사용자로부터 입력받은 수(N)의 배수를 1부터 100까지 출력하는 c프로그램 
+
+//int main() {
+//    int N, i;
+//
+//    printf("숫자를 입력하세요: ");
+//    scanf_s("%d", &N);
+//
+//    for (i = 1; i <= 100; i++) {
+//        if (i % N == 0) {
+//            printf("%d\n", i);
+//        }
 //    }
 //
 //    return 0;
 //}
 
-//int main()
-//{
-//    int num1, num2, num3, num4, num5;
-//    int sum = 0;
+//4. 주어진 숫자(N)만큼의 줄에 걸쳐 별(*) 패턴을 출력하는 c프로그램 
+
+//int main() {
+//    int N, i, j;
 //
-//    printf("5개의 정수를 입력하세요:\n");
-//    scanf_s("%d %d %d %d %d", &num1, &num2, &num3, &num4, &num5);
+//    printf("숫자를 입력하세요: ");
+//    scanf_s("%d", &N);
 //
-//    if (num1 > 0) {
-//        sum += num1;
-//    }
-//    if (num2 > 0) {
-//        sum += num2;
-//    }
-//    if (num3 > 0) {
-//        sum += num3;
-//    }
-//    if (num4 > 0) {
-//        sum += num4;
-//    }
-//    if (num5 > 0) {
-//        sum += num5;
+//    for(i = 1; i <= N; i++) {
+//        for (j = 1; j <= i; j++) {
+//            printf("*");
+//        }
+//        printf("\n");
 //    }
 //
-//    printf("양수들의 합은 %d 입니다.\n", sum);
+//    return 0;
+//}
+
+//5. 1부터 100까지의 수 중 짝수의 합과 홀수의 합을 각각 계산하여 출력하는 c프로그램
+//int main() {
+//	int evensum=0, oddsum=0, i;
+//
+//	for (i = 2; i <= 100; i += 2) {
+//		evensum += i;
+//	}
+//	for (i = 1; i <= 100; i += 2) {
+//		oddsum += i;
+//	}
+//
+//	printf("짝수의 합 : %d\n", evensum);
+//	printf("홀수의 합 : %d\n", oddsum);
 //
 //	return 0;
 //}
-
-//int main() {
-//    int n;
-//
-//    printf("정수를 입력하세요: ");
-//    scanf_s("%d", &n);
-//    
-//    if (n >= 20 && n <= 30) {
-//        printf("1\n");
-//    }
-//    else {
-//        printf("0\n");
-//    }
-//
-//    return 0;
-//}
-
-//int main() {
-//    int n;
-//
-//    printf("양의 정수를 입력하세요: ");
-//    scanf_s("%d", &n);
-//
-//    if (n % 2 == 0) {
-//        printf("0\n");
-//    }
-//    else {
-//        printf("1\n");
-//    }
-//
-//    return 0;
-//}
-
-
-//int main() {
-//    int n, m;
-//
-//    printf("두 개의 정수를 입력하세요: ");
-//    scanf_s("%d %d", &n, &m);
-//
-//    if (n > m) {
-//        printf("%d\n", n);
-//    }
-//    else {
-//        printf("%d\n", m);
-//    }
-//
-//    return 0;
-//}
-
-
-int main() {
-    int a, b;
-
-    printf("두 개의 서로 다른 양의 정수를 입력하세요: ");
-    scanf_s("%d %d", &a, &b);
-
-    if (a > b) {
-        int 몫 = a / b;
-        int 나머지 = a % b;
-        printf("나눈 몫: %d, 나머지: %d\n", 몫, 나머지);
-    }
-    else {
-        int 몫 = b / a;
-        int 나머지 = b % a;
-        printf("나눈 몫: %d, 나머지: %d\n", 몫, 나머지);
-    }
-
-    return 0;
-}
